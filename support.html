@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supporto — JingleCue Pro</title>
+<meta name="description" content="Supporto e FAQ di JingleCue Pro. Domande frequenti, contatti, troubleshooting.">
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="logo-text">
+        JingleCue Pro
+        <span class="sub">Broadcast Cue Studio · iPad</span>
+      </div>
+    </a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="support.html" class="active">Supporto</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="eyebrow">Centro assistenza</div>
+    <h1>Supporto<br>JingleCue Pro</h1>
+    <p>Qui trovi le risposte alle domande più comuni. Se non trovi quello che cerchi, scrivimi direttamente.</p>
+
+    <div class="box accent">
+      <h3>Contatto diretto</h3>
+      <p>Risposta entro <strong>24-48 ore lavorative</strong>.<br>
+      E-mail: <a href="mailto:info@danielecappello.com">info@danielecappello.com</a></p>
+      <p>Per segnalare un bug includi: modello iPad, versione iPadOS, versione JingleCue Pro (la trovi in fondo all'app), passi per riprodurre il problema.</p>
+    </div>
+
+    <h2>Domande frequenti</h2>
+
+    <div class="faq">
+      <details>
+        <summary>L'app funziona offline?</summary>
+        <p>Sì, JingleCue Pro funziona <strong>interamente sul tuo iPad</strong>. Tutti gli audio, la configurazione e il cue sheet sono salvati localmente. Non serve connessione internet, non ci sono account, non c'è cloud. I tuoi dati non lasciano mai il dispositivo.</p>
+      </details>
+
+      <details>
+        <summary>Quali file audio posso importare?</summary>
+        <p>JingleCue Pro supporta i formati audio nativi di iOS: <strong>MP3, WAV, AAC, M4A</strong>. Importa dall'app File di iOS, da iCloud Drive, da AirDrop o da qualsiasi altra fonte raggiungibile tramite il document picker iOS standard.</p>
+      </details>
+
+      <details>
+        <summary>Come funziona la lettura automatica dei metadati?</summary>
+        <p>Quando importi un file audio, JingleCue Pro legge automaticamente i tag ID3 e popola i campi del pad: titolo, artista, compositore, autore del testo, editore, album, etichetta discografica, anno, ISRC. Sono supportati i tag ID3 v2.3, v2.4, iTunes M4A e WAV INFO chunks. I campi vuoti possono essere completati manualmente dal SETUP del pad.</p>
+      </details>
+
+      <details>
+        <summary>Il cue sheet è conforme alla SIAE?</summary>
+        <p>JingleCue Pro genera un cue sheet con tutti i campi richiesti dal bordereau SIAE: data e ora di trasmissione, titolo, artista, compositore, autore testo, editore, album, etichetta, anno, ISRC, ISWC, tipo utilizzo, durata effettiva on-air. L'header del bordereau include nome emittente, stazione, programma, partita IVA, codice SIAE, responsabile, periodo di rendicontazione.</p>
+        <p>L'export è disponibile in CSV (UTF-8 RFC 4180), SIAE XML 1.1 strutturato e MOS XML 2.8.5. La conformità formale al modello adottato dalla tua emittente va sempre verificata con il referente SIAE locale prima del primo invio ufficiale.</p>
+      </details>
+
+      <details>
+        <summary>L'audio si interrompe se passo ad un'altra app?</summary>
+        <p>No. JingleCue Pro usa il <strong>Background Audio Mode</strong> nativo iOS: l'audio continua anche con schermo bloccato o passando ad altre applicazioni. Adatto a uso live continuativo.</p>
+      </details>
+
+      <details>
+        <summary>Posso riprodurre più pad contemporaneamente?</summary>
+        <p>Sì. L'audio engine di JingleCue Pro è basato su AVAudioEngine nativo e supporta il multi-playback simultaneo. Puoi mixare jingle, bed, stinger, voce e fonti diverse contemporaneamente. Ogni pad ha volume, fade, IN/OUT point e loop indipendenti.</p>
+      </details>
+
+      <details>
+        <summary>Cos'è la modalità Automix?</summary>
+        <p>Automix è il crossfade automatico tra pad. Quando è attivo (toggle nell'header), premere un pad fermo mentre un altro suona avvia un fade-out del pad attivo e un fade-in del nuovo, con la stessa durata. Tieni premuto il bottone AUTOMIX per regolare la durata del crossfade (da 0.5 a 10 secondi).</p>
+      </details>
+
+      <details>
+        <summary>Posso assegnare colori personalizzati ai pad?</summary>
+        <p>Sì. Apri il SETUP di un pad e scegli un colore dalla palette (10 colori curati per il broadcast: rosso, arancio, ambra, giallo, verde, ciano, blu, viola, rosa, verde acqua). Il colore si applica al bordo quando il pad è fermo e allo sfondo durante il playback.</p>
+      </details>
+
+      <details>
+        <summary>Cos'è il seek touch sulla waveform?</summary>
+        <p>Durante il playback puoi trascinare con un dito sulla forma d'onda visualizzata nel pad per saltare a qualsiasi punto del brano, sia avanti che indietro. Utile per riascoltare un punto, saltare un'intro o trovare un drop senza fermare la riproduzione.</p>
+      </details>
+
+      <details>
+        <summary>Su quali iPad funziona?</summary>
+        <p>Tutti gli iPad con <strong>iPadOS 17.0 o superiore</strong> in orientamento landscape. Esperienza ottimale su iPad Pro 11", 12.9" e 13".</p>
+      </details>
+
+      <details>
+        <summary>Come faccio il backup dei miei jingle e del cue sheet?</summary>
+        <p>I dati sono inclusi nel backup standard di iPadOS:</p>
+        <ul>
+          <li><strong>iCloud Backup</strong> (Impostazioni → [tuo nome] → iCloud → Backup di iCloud)</li>
+          <li><strong>Backup su Mac/PC</strong> via Finder/iTunes (collegando l'iPad via cavo)</li>
+        </ul>
+        <p>In aggiunta, puoi esportare manualmente l'intera libreria pad in formato JSON dal pulsante ESPORTA del footer, e i file audio originali tramite l'app File di iOS.</p>
+      </details>
+
+      <details>
+        <summary>L'app costa? Ci sono abbonamenti?</summary>
+        <p>JingleCue Pro è un acquisto one-time, senza abbonamenti, senza acquisti in-app. Paghi una volta sola e l'app è tua. Gli aggiornamenti della stessa versione sono gratuiti.</p>
+      </details>
+
+      <details>
+        <summary>I miei dati vengono inviati da qualche parte?</summary>
+        <p>Mai. Nessun audio, nessun cue sheet, nessuna informazione personale lascia il tuo iPad. JingleCue Pro non ha server, non raccoglie analytics, non usa SDK di tracciamento. Vedi la <a href="privacy.html">Privacy Policy</a> per i dettagli.</p>
+      </details>
+
+      <details>
+        <summary>Ho perso il cue sheet — posso recuperarlo?</summary>
+        <p>Se hai un backup iCloud o locale recente del dispositivo, ripristinando il backup recuperi anche il cue sheet. Senza backup, i dati cancellati non sono recuperabili. Per evitare perdite, esporta periodicamente il cue sheet in CSV/JSON (pulsanti ESPORTA del footer).</p>
+      </details>
+
+      <details>
+        <summary>Posso usare JingleCue Pro per uso commerciale (radio, TV, eventi)?</summary>
+        <p>Sì, JingleCue Pro è pensato proprio per l'uso professionale broadcast. L'unica responsabilità dell'utente è assicurarsi di avere i diritti d'autore necessari per gli audio importati e di adempiere agli obblighi di rendicontazione SIAE per la propria emittenza.</p>
+      </details>
+
+      <details>
+        <summary>Trovo un bug — come segnalarlo?</summary>
+        <p>Scrivi a <a href="mailto:info@danielecappello.com">info@danielecappello.com</a> con questi dati:</p>
+        <ul>
+          <li>Modello iPad (es. iPad Pro 11" 4ª gen)</li>
+          <li>Versione iPadOS (Impostazioni → Generali → Info)</li>
+          <li>Versione JingleCue Pro</li>
+          <li>Passi precisi per riprodurre il problema</li>
+          <li>Comportamento atteso vs. comportamento osservato</li>
+          <li>Eventuali screenshot</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="meta">
+      Sviluppato da <strong>Daniele Cappello</strong> · Italia · 2026<br>
+      Documento aggiornato il 13 maggio 2026
+    </div>
+  </div>
+</main>
+
+<footer class="bottom">
+  <div class="container">
+    <div class="legal">
+      JingleCue Pro © 2026 <strong style="color: var(--text-2)">Daniele Cappello</strong> · Tutti i diritti riservati.<br>
+      <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Supporto</a> · <a href="mailto:info@danielecappello.com">Contatto</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
