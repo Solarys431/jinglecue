@@ -1,8 +1,8 @@
 # Mai pubblicare file con riferimenti al filesystem locale o setup interno
-README.md
-README*.md
 NOTES.md
 TODO.md
+*_INTERNAL*
+*_PRIVATE*
 
 # macOS metadata
 .DS_Store
