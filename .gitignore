@@ -1,0 +1,24 @@
+# Mai pubblicare file con riferimenti al filesystem locale o setup interno
+README.md
+README*.md
+NOTES.md
+TODO.md
+
+# macOS metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor temp
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build / temp
+node_modules/
+.cache/
+dist/
+build/
