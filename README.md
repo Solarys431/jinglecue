@@ -1,10 +1,11 @@
 # JingleCue Pro
 
-> Broadcast Cue Studio per iPad. Multi-playback, cue sheet SIAE automatico, export MOS Protocol.
+> Broadcast Cue Studio per iPad. Multi-playback, registro cue sheet automatico, export in formati standard di settore.
 
-JingleCue Pro è un cue studio professionale per iPad, pensato per chi va davvero in onda: speaker radio, animatori di eventi, registi televisivi, tecnici di sala. L'audio engine nativo permette il multi-playback simultaneo con fade, IN/OUT point e loop indipendenti per ogni pad. Ogni jingle mandato in onda viene registrato automaticamente nel cue sheet con tutti i metadati editoriali richiesti per la rendicontazione SIAE.
+## Stato del progetto
 
-Questa repo contiene le pagine di supporto pubbliche del prodotto: **landing**, **privacy policy** e **centro assistenza**.
+**JingleCue Pro è attualmente in fase di test interno (TestFlight).**
+L'app **non è ancora distribuita su App Store** e non è disponibile per il download pubblico. La submission per la pubblicazione è in preparazione. Questa repository ospita le pagine pubbliche di supporto e privacy.
 
 —
 
@@ -18,27 +19,29 @@ Questa repo contiene le pagine di supporto pubbliche del prodotto: **landing**, 
 
 ## Cosa fa l'app
 
-**Audio engine nativo.** Basato su AVAudioEngine: latenza minima, multi-pad simultaneo, fade in/out per pad, IN/OUT point al centesimo di secondo, loop seamless.
+**Audio engine nativo.** Basato su AVAudioEngine di iOS. Supporta multi-playback simultaneo, fade in/out per pad, IN/OUT point al centesimo di secondo, loop seamless.
 
-**Modalità Automix.** Toggle nell'header: quando attivo, premere un pad fermo mentre un altro suona avvia un crossfade automatico tra i due. Durata configurabile da 0,5 a 10 secondi.
+**Modalità Automix.** Toggle nell'header dell'app: quando attivo, premere un pad fermo mentre un altro suona avvia un crossfade automatico tra i due. Durata configurabile da 0,5 a 10 secondi.
 
-**Forma d'onda live con seek.** Durante la riproduzione la forma d'onda viene disegnata nel pad in tempo reale. Trascinando con un dito si salta a qualsiasi punto del brano, anche durante il playback.
+**Forma d'onda live con seek.** Durante la riproduzione la forma d'onda viene disegnata nel pad in tempo reale. Trascinando con un dito si salta a qualsiasi punto del brano.
 
-**Cue Sheet SIAE.** Ogni jingle in onda viene loggato automaticamente con: data, ora, titolo, artista, compositore, autore del testo, editore, album, etichetta discografica, anno, ISRC, ISWC, tipo di utilizzo, durata effettiva on-air.
+**Registro cue sheet.** Ogni pad mandato in onda viene registrato con: data, ora, titolo, artista, compositore, autore del testo, editore, album, etichetta discografica, anno, ISRC, ISWC, tipo di utilizzo, durata effettiva.
 
-**Export multipli.**
-- CSV (UTF-8, RFC 4180) per Excel e Numbers
-- SIAE XML 1.1 con header bordereau completo (P.IVA, codice SIAE, responsabile, periodo)
-- MOS XML 2.8.5 compatibile con Avid iNews e Vizrt Mosart
-- JSON per integrazioni custom
+**Export.**
+- **CSV** in UTF-8 conforme a RFC 4180, apribile in Excel, Numbers e LibreOffice
+- **XML strutturato per SIAE** con i campi del bordereau (data, titolo, autori, editore, codici, durata) e header con identità emittente
+- **XML conforme allo standard MOS Protocol 2.8.5** (Media Object Server) per integrazione potenziale con newsroom system di settore
+- **JSON** per integrazioni custom
 
-**Lettura ID3 automatica.** Tag ID3 v2.3/v2.4, iTunes M4A e WAV INFO chunks. Popolamento automatico di titolo, artista, compositore, autore testo, editore, album, etichetta, anno, ISRC.
+> **Nota importante:** la conformità formale degli export al template adottato dalla propria emittente (per SIAE) o al newsroom system in uso (per MOS) va verificata caso per caso prima dell'invio o dell'integrazione ufficiale. JingleCue Pro produce file conformi agli standard tecnici di riferimento, ma non garantisce l'accettazione automatica da parte di sistemi specifici di terze parti.
 
-**Categorie e colori.** Categorie personalizzabili, palette di 10 colori curati per identificare i pad a colpo d'occhio. Playlist dedicata con sequenza automatica e loop opzionale.
+**Lettura tag automatica.** Tag ID3 v2.3/v2.4, iTunes M4A e WAV INFO chunks letti automaticamente al momento dell'import. Popolamento di titolo, artista, compositore, autore testo, editore, album, etichetta, anno, ISRC.
 
-**Background audio nativo.** L'audio non si interrompe se passi ad un'altra app o blocchi lo schermo. iOS Background Audio Mode.
+**Categorie e colori.** Categorie personalizzabili dall'utente. Palette di 10 colori per identificare i pad. Categoria "Playlist" dedicata con sequenza automatica e loop opzionale.
 
-**Privacy reale.** L'app funziona interamente sul dispositivo. Nessun account, nessun cloud, nessun SDK di analytics, nessun annuncio pubblicitario, nessun tracker.
+**Background audio nativo.** L'audio continua se l'utente passa ad un'altra app o blocca lo schermo. Usa l'iOS Background Audio Mode.
+
+**Privacy.** L'app funziona interamente sul dispositivo. Non vengono raccolti dati personali. Non sono integrati SDK di analytics, crash reporting di terze parti, tracker o pubblicità. Vedi la [privacy policy](https://solarys431.github.io/jinglecue/privacy.html) per i dettagli completi.
 
 —
 
@@ -46,7 +49,7 @@ Questa repo contiene le pagine di supporto pubbliche del prodotto: **landing**, 
 
 - Radio comunitarie, web radio, FM locali
 - DJ, animatori, MC per eventi e matrimoni
-- Studio televisivo (sigle, stinger, tappetini, integrazione iNews/Mosart)
+- Studio televisivo (sigle, stinger, tappetini)
 - Teatro e live show
 - Sport e arena (inni, sirene, fanfare modulari)
 - Scuole di radio e accademie audio
@@ -58,24 +61,19 @@ Questa repo contiene le pagine di supporto pubbliche del prodotto: **landing**, 
 - iPad con **iPadOS 17.0** o superiore
 - Orientamento **landscape**
 - Ottimizzata per iPad Pro 11", 12.9" e 13"
-
-—
-
-## Privacy
-
-JingleCue Pro non raccoglie alcun dato personale dell'utente. Tutti i file audio, la configurazione e il cue sheet restano sul dispositivo, nel sandbox dell'app. Vedi la [privacy policy completa](https://solarys431.github.io/jinglecue/privacy.html).
+- Solo iPad (non disponibile per iPhone)
 
 —
 
 ## Supporto
-
-Per domande, segnalazioni o richieste:
 
 - **FAQ** · https://solarys431.github.io/jinglecue/support.html
 - **E-mail** · info@danielecappello.com
 
 —
 
-## Licenza
+## Licenza e marchi
 
-JingleCue Pro © 2026 Daniele Cappello. Tutti i diritti riservati. L'applicazione è distribuita esclusivamente tramite Apple App Store. Apple, iPad, iPadOS e App Store sono marchi registrati di Apple Inc. SIAE è marchio della Società Italiana degli Autori ed Editori. JingleCue Pro non è affiliato a Apple Inc. né alla SIAE.
+JingleCue Pro © 2026 Daniele Cappello. Tutti i diritti riservati.
+
+Apple, iPad, iPadOS e App Store sono marchi registrati di Apple Inc. SIAE è marchio della Società Italiana degli Autori ed Editori. Avid iNews è un marchio di Avid Technology, Inc. Mosart è un marchio di Vizrt. **JingleCue Pro non è affiliato a, sponsorizzato da o associato a Apple Inc., SIAE, Avid Technology o Vizrt.** I nomi dei prodotti di terze parti sono citati esclusivamente a scopo descrittivo per indicare lo standard tecnico (MOS Protocol) supportato dagli export dell'app.

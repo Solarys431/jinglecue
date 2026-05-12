@@ -93,18 +93,33 @@
       </details>
 
       <details>
-        <summary>Il cue sheet è conforme alla SIAE?</summary>
+        <summary>Il cue sheet è utilizzabile per la rendicontazione SIAE?</summary>
         <p>
-          JingleCue Pro genera un cue sheet con tutti i campi richiesti dal bordereau SIAE:
-          data e ora di trasmissione, titolo, artista, compositore, autore testo, editore, album,
-          etichetta, anno, ISRC, ISWC, tipo utilizzo, durata effettiva on-air. L'header del bordereau
-          include nome emittente, stazione, programma, partita IVA, codice SIAE, responsabile, periodo
-          di rendicontazione.
+          JingleCue Pro tiene un registro automatico di ogni pad mandato in onda con i campi tipicamente richiesti
+          per la rendicontazione: data e ora, titolo, artista, compositore, autore testo, editore, album, etichetta,
+          anno, ISRC, ISWC, tipo utilizzo, durata effettiva on-air. L'header del documento include nome emittente,
+          stazione, programma, partita IVA, codice SIAE, responsabile, periodo di rendicontazione.
         </p>
         <p>
-          L'export è disponibile in CSV (UTF-8 RFC 4180), SIAE XML 1.1 strutturato e MOS XML 2.8.5.
-          La conformità formale al modello adottato dalla tua emittente va sempre verificata con il
-          referente SIAE locale prima del primo invio ufficiale.
+          L'export è disponibile in CSV (UTF-8, RFC 4180), XML strutturato e JSON. <strong>La conformità formale
+          al template adottato dalla propria emittente locale va sempre verificata con il referente SIAE prima
+          del primo invio ufficiale.</strong> JingleCue Pro produce un documento tecnicamente strutturato, ma non
+          garantisce l'accettazione automatica da parte di tutti gli uffici SIAE.
+        </p>
+      </details>
+
+      <details>
+        <summary>L'app è compatibile con Avid iNews / Vizrt Mosart?</summary>
+        <p>
+          JingleCue Pro esporta la libreria pad in <strong>XML conforme allo standard MOS Protocol 2.8.5</strong>
+          (Media Object Server), che è il formato usato da diversi newsroom system di settore tra cui Avid iNews
+          e Vizrt Mosart.
+        </p>
+        <p>
+          <strong>L'integrazione end-to-end con un sistema newsroom specifico richiede sempre configurazione
+          dedicata</strong> (mapping campi, MOS ID concordato, eventuali estensioni proprietarie). L'export di
+          JingleCue Pro è un punto di partenza tecnicamente conforme, non una garanzia di funzionamento immediato
+          con tutti i sistemi. Il MOS ID dell'emittente è configurabile nel pannello Storage dell'app.
         </p>
       </details>
 
