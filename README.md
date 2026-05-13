@@ -14,6 +14,7 @@ L'app **non è ancora distribuita su App Store** e non è disponibile per il dow
 - **Home** · https://solarys431.github.io/jinglecue/
 - **Privacy Policy** · https://solarys431.github.io/jinglecue/privacy.html
 - **Supporto / FAQ** · https://solarys431.github.io/jinglecue/support.html
+- **Termini d'uso (EULA)** · https://solarys431.github.io/jinglecue/terms.html
 
 —
 
