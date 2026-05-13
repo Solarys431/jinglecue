@@ -88,7 +88,23 @@
           Quando importi un file audio, JingleCue Pro legge automaticamente i tag e popola
           i campi del pad: titolo, artista, compositore, autore del testo, editore, album,
           etichetta discografica, anno, ISRC. Sono supportati i tag ID3 v2.3, v2.4, iTunes M4A
-          e WAV INFO chunks. I campi vuoti possono essere completati manualmente dal SETUP del pad.
+          e WAV INFO chunks.
+        </p>
+        <p>
+          <strong>Limiti della compilazione automatica.</strong> La compilazione dipende strettamente
+          dalla presenza dei tag nel file di origine. Se il file non li contiene (es. WAV non taggato,
+          MP3 con tag parziali), i campi mancanti restano vuoti e vanno completati manualmente nel
+          SETUP del pad, sezione Metadati SIAE.
+        </p>
+        <p>
+          <strong>Verifica dei valori.</strong> JingleCue Pro non verifica la correttezza dei
+          metadati inseriti: codici ISRC, ISWC, anni e altri campi non vengono validati contro
+          banche dati esterne. La responsabilità dell'accuratezza dei dati per la rendicontazione
+          SIAE resta dell'utente.
+        </p>
+        <p>
+          <strong>Campi non standard.</strong> ISWC e Tipo utilizzo (jingle, sigla, bed, ecc.) non
+          sono mai presenti come tag audio standard: vanno sempre compilati manualmente.
         </p>
       </details>
 
