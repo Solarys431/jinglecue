@@ -37,7 +37,7 @@ L'app **non è ancora distribuita su App Store** e non è disponibile per il dow
 
 **Lettura tag automatica.** Tag ID3 v2.3/v2.4, iTunes M4A e WAV INFO chunks letti automaticamente al momento dell'import. Popolamento di titolo, artista, compositore, autore testo, editore, album, etichetta, anno, ISRC.
 
-**Categorie e colori.** Categorie personalizzabili dall'utente. Palette di 10 colori per identificare i pad. Categoria "Playlist" dedicata con sequenza automatica e loop opzionale.
+**Banchi memoria e colori.** Categorie default: Jingle, Stinger, SFX, Bank 4, Bank 5, Bank 6. Aggiungibili e rinominabili in qualsiasi momento. Eliminazione protetta da conferma quando il banco contiene pad. Categoria Playlist separata con funzione di sequenza automatica e loop opzionale. Palette di 10 colori per i pad.
 
 **Background audio nativo.** L'audio continua se l'utente passa ad un'altra app o blocca lo schermo. Usa l'iOS Background Audio Mode.
 
