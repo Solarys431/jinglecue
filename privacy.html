@@ -25,6 +25,7 @@
     </a>
     <div class="links">
       <a href="index.html">Home</a>
+      <a href="index.html#piattaforme">Piattaforme</a>
       <a href="support.html">Supporto</a>
       <a href="privacy.html" class="active">Privacy</a>
       <a href="terms.html">Termini</a>
@@ -47,8 +48,8 @@
   <div class="container narrow">
 
     <div class="meta-line">
-      <span>Versione 1.0</span>
-      <span>13 maggio 2026</span>
+      <span>Versione 1.1</span>
+      <span>1 giugno 2026</span>
       <span>GDPR · D.lgs. 196/2003</span>
     </div>
 
@@ -57,7 +58,8 @@
       <p>
         JingleCue Pro <strong>non raccoglie alcun dato personale</strong>. Nessuna registrazione,
         nessun account, nessun servizio cloud, nessun tracker, nessun analytics,
-        nessun annuncio pubblicitario. L'app funziona interamente sul tuo iPad.
+        nessun annuncio pubblicitario. L'app funziona interamente sul tuo dispositivo,
+        in tutte le sue versioni (iPad, Mac e Windows).
       </p>
     </div>
 
@@ -92,27 +94,29 @@
     <div class="legal-section">
       <span class="section-number">03</span>
       <h2>Dati che restano sul dispositivo</h2>
-      <p>I seguenti dati vengono creati e conservati esclusivamente sul tuo iPad, all'interno del sandbox dell'applicazione:</p>
+      <p>I seguenti dati vengono creati e conservati esclusivamente sul tuo dispositivo (iPad, Mac o PC Windows), nello spazio dati riservato all'applicazione:</p>
       <ul>
-        <li><strong>File audio</strong> che importi manualmente (MP3, WAV, AAC, M4A)</li>
+        <li><strong>File audio</strong> che importi manualmente (MP3, WAV, AAC, M4A, AIFF, FLAC e altri formati supportati)</li>
         <li><strong>Configurazione dei pad</strong>: nomi, categorie, volumi, fade, punti IN/OUT, colori, loop</li>
         <li><strong>Metadati editoriali</strong> che inserisci o letti dai tag ID3 (titolo, artista, compositore, autore testo, editore, album, etichetta, anno, ISRC, ISWC)</li>
         <li><strong>Cue sheet on-air</strong>: orario di ogni riproduzione e durata effettiva</li>
         <li><strong>Identità broadcast</strong>: nome emittente, stazione, programma, partita IVA, codice SIAE, responsabile (se inseriti)</li>
       </ul>
       <p>
-        Questi dati sono <strong>locali al dispositivo</strong>. Sono inclusi nel backup standard di iOS/iPadOS
-        (iCloud Backup o iTunes/Finder backup) se attivo, secondo le tue impostazioni Apple.
+        Questi dati sono <strong>locali al dispositivo</strong>. Su iPad e Mac sono inclusi nel backup standard del
+        sistema operativo (iCloud Backup oppure backup su Mac/PC via Finder per iPad; Time Machine per Mac), secondo
+        le tue impostazioni. Su Windows risiedono in una cartella dati locale dell'applicazione, inclusa negli
+        eventuali backup del computer configurati dall'utente.
       </p>
     </div>
 
     <div class="legal-section">
       <span class="section-number">04</span>
       <h2>Permessi richiesti</h2>
-      <p>JingleCue Pro richiede i seguenti permessi iOS:</p>
+      <p>JingleCue Pro richiede soltanto i permessi necessari a riprodurre e importare audio:</p>
       <ul>
-        <li><strong>Audio in background</strong>: per continuare la riproduzione quando l'app è in background o lo schermo è bloccato. Standard iOS Background Audio Mode.</li>
-        <li><strong>Accesso a file da Files app / iCloud Drive</strong>: solo quando importi manualmente un file audio. L'utente seleziona esplicitamente cosa importare.</li>
+        <li><strong>Accesso ai file selezionati dall'utente</strong>: solo quando importi manualmente un file audio. Su iPad dall'app File / iCloud Drive, su Mac e Windows dal selettore file del sistema. L'utente seleziona esplicitamente cosa importare.</li>
+        <li><strong>Audio in background (solo iPad)</strong>: per continuare la riproduzione quando l'app è in background o lo schermo è bloccato (Background Audio Mode di iOS). Su Mac e Windows l'audio prosegue normalmente finché l'app desktop resta aperta.</li>
       </ul>
       <p>
         L'app <strong>non accede</strong> alla rubrica, alla galleria foto, al microfono, alla fotocamera,
@@ -124,10 +128,11 @@
       <span class="section-number">05</span>
       <h2>Condivisione di file (Export)</h2>
       <p>
-        L'utente può esportare il cue sheet e la libreria pad in vari formati (CSV, SIAE XML, MOS XML, JSON)
-        utilizzando l'iOS Share Sheet nativo. La destinazione della condivisione (Mail, AirDrop, Files, Drive, server)
-        è scelta dall'utente. Apple gestisce queste condivisioni; JingleCue Pro non ha visibilità o controllo
-        su dove l'utente decide di inviare i propri file.
+        L'utente può esportare il cue sheet e la libreria pad in vari formati (CSV, SIAE XML, MOS XML, JSON).
+        Su iPad la condivisione avviene tramite il Share Sheet nativo di iOS; su Mac e Windows tramite la finestra
+        di salvataggio file del sistema operativo. La destinazione (Mail, AirDrop, cartella locale, unità di rete,
+        server) è scelta dall'utente. JingleCue Pro non ha visibilità o controllo su dove l'utente decide di
+        salvare o inviare i propri file.
       </p>
     </div>
 
@@ -142,7 +147,7 @@
       <ul>
         <li>Cancellare i file audio importati direttamente dall'app (pulsante RIMUOVI nel SETUP di ogni pad)</li>
         <li>Svuotare il cue sheet (pulsante SVUOTA LOG nella vista Cue Sheet)</li>
-        <li>Disinstallare l'app: tutti i dati locali vengono cancellati automaticamente da iOS</li>
+        <li>Disinstallare l'app: su iPad e Mac i dati locali vengono rimossi dal sistema operativo; su Windows la cartella dati locale dell'applicazione può essere eliminata manualmente dall'utente</li>
       </ul>
     </div>
 
@@ -150,9 +155,10 @@
       <span class="section-number">07</span>
       <h2>Sicurezza dei dati</h2>
       <p>
-        I dati locali al dispositivo sono protetti dal sistema di sicurezza standard di iOS/iPadOS,
-        inclusa la cifratura hardware del file system, il sandbox dell'applicazione che impedisce ad altre
-        app di accedere ai file di JingleCue Pro, e l'autenticazione del dispositivo (passcode, Face ID, Touch ID).
+        I dati locali sono protetti dai meccanismi di sicurezza standard del sistema operativo. Su iPad e Mac:
+        cifratura del file system, sandbox dell'applicazione che impedisce ad altre app di accedere ai file di
+        JingleCue Pro, e autenticazione del dispositivo (passcode, Face ID, Touch ID). Su Windows: protezione
+        dell'account utente e, se attiva, la cifratura del disco del sistema operativo (BitLocker).
       </p>
     </div>
 
@@ -160,7 +166,8 @@
       <span class="section-number">08</span>
       <h2>Bambini</h2>
       <p>
-        JingleCue Pro è classificata <strong>4+</strong> su App Store. L'app non raccoglie dati e non contiene
+        JingleCue Pro è uno strumento professionale di tipo broadcast, classificato per un pubblico generico
+        (sulle versioni distribuite via App Store: <strong>4+</strong>). L'app non raccoglie dati e non contiene
         contenuti inadatti ai minori. Non è specificamente destinata a bambini sotto i 13 anni e non raccoglie
         consapevolmente alcun dato di minori.
       </p>
@@ -236,7 +243,7 @@
     <div class="legal">
       JingleCue Pro © 2026 <strong style="color: var(--text-2)">Daniele Cappello</strong>. Tutti i diritti riservati.<br>
       Documento redatto in conformità al Regolamento UE 2016/679 (GDPR) e al Codice in materia di protezione dei dati personali (D.lgs. 196/2003).<br>
-      Apple, iPad, iPadOS, App Store sono marchi registrati di Apple Inc. JingleCue Pro non è affiliato, autorizzato, sponsorizzato o approvato da Apple Inc. né da SIAE — Società Italiana degli Autori ed Editori.
+      Apple, iPad, iPadOS, macOS, Mac, App Store sono marchi registrati di Apple Inc. Microsoft, Windows e Windows 10/11 sono marchi registrati di Microsoft Corporation. JingleCue Pro non è affiliato, autorizzato, sponsorizzato o approvato da Apple Inc., Microsoft Corporation né da SIAE — Società Italiana degli Autori ed Editori.
     </div>
   </div>
 </footer>
