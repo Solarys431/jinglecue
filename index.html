@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JingleCue Pro — Broadcast Cue Studio per iPad</title>
-<meta name="description" content="JingleCue Pro è un cue studio broadcast per iPad: multi-playback, registro cue sheet automatico, export XML strutturati conformi agli standard di settore. In sviluppo, attualmente in fase di test interno.">
+<title>JingleCue Pro — Broadcast Cue Studio per iPad, Mac e Windows</title>
+<meta name="description" content="JingleCue Pro è un cue studio broadcast multipiattaforma per iPad, Mac e Windows: multi-playback, registro cue sheet automatico, export XML strutturati conformi agli standard di settore. La versione Mac aggiunge il doppio bus PROGRAM/CUE per il preascolto in cuffia. In sviluppo, attualmente in fase di test interno.">
 <meta name="theme-color" content="#0c0c0e">
 <link rel="stylesheet" href="shared.css">
 </head>
@@ -25,6 +25,7 @@
     </a>
     <div class="links">
       <a href="index.html" class="active">Home</a>
+      <a href="#piattaforme">Piattaforme</a>
       <a href="#funzioni">Funzioni</a>
       <a href="support.html">Supporto</a>
       <a href="privacy.html">Privacy</a>
@@ -35,33 +36,70 @@
 
 <section class="hero">
   <div class="container">
-    <div class="eyebrow">Made for iPad · In sviluppo</div>
+    <div class="eyebrow">iPad · Mac · Windows · In sviluppo</div>
     <h1>
-      Il broadcast cue studio<br>
-      è <em>nel tuo iPad.</em>
+      Il broadcast cue studio,<br>
+      su <em>iPad, Mac e Windows.</em>
     </h1>
     <p class="lead">
-      JingleCue Pro è un'app per iPad che lancia jingle, stinger, bed e playlist
-      con multi-playback simultaneo. Registra automaticamente un cue sheet dei
-      pad mandati in onda ed esporta in CSV, XML strutturato e JSON.
+      JingleCue Pro lancia jingle, stinger, bed e playlist con multi-playback
+      simultaneo, registra automaticamente un cue sheet dei pad mandati in onda
+      ed esporta in CSV, XML strutturato e JSON. Stesso schema dati su tutte le
+      piattaforme: il banco creato su un dispositivo si esporta e si riapre sugli
+      altri. La versione <strong>Mac</strong> aggiunge il doppio bus
+      <strong>PROGRAM / CUE</strong> per il preascolto in cuffia, e la versione
+      <strong>Windows</strong> l'audio a bassa latenza <strong>ASIO</strong>.
     </p>
 
     <div class="box" style="margin-top: 36px;">
       <h3>Stato</h3>
       <p>
-        L'app è attualmente <strong>in fase di test interno tramite TestFlight</strong> e
-        <strong>non è ancora pubblicata su App Store</strong>. La submission Apple
-        è in preparazione. Questa pagina raccoglie l'informativa di supporto e privacy
+        Le tre versioni sono attualmente <strong>in fase di test interno</strong>
+        (iPad e Mac via TestFlight, Windows in distribuzione diretta) e
+        <strong>non ancora pubblicate sugli store</strong>. Le submission sono in
+        preparazione. Questa pagina raccoglie l'informativa di supporto e privacy
         del prodotto.
       </p>
     </div>
 
     <div class="tags">
-      <span class="tag">iPad only</span>
-      <span class="tag">iPadOS 17+</span>
+      <span class="tag">iPad · iPadOS 17+</span>
+      <span class="tag">Mac · macOS 13+</span>
+      <span class="tag">Windows 10/11</span>
       <span class="tag">Italiano</span>
       <span class="tag">100% offline</span>
       <span class="tag">Privacy first</span>
+    </div>
+  </div>
+</section>
+
+<section id="piattaforme">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Tre piattaforme</div>
+      <h2>Stessa app, tre dispositivi.</h2>
+      <p>
+        Stesso schema dati, stessa logica, stessi export. Cambia l'hardware:
+        ogni versione sfrutta al meglio ciò che il dispositivo offre.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feat">
+        <span class="num">iPadOS 17+</span>
+        <h3>iPad</h3>
+        <p>L'esperienza touch-first: multi-playback, cue sheet automatico, editor IN/OUT con forma d'onda, loop, automix e tutti gli export. Background audio per la riproduzione a schermo bloccato. Una vera regia in mano, ovunque.</p>
+      </div>
+      <div class="feat">
+        <span class="num">macOS 13+ · funzioni maggiorate</span>
+        <h3>Mac</h3>
+        <p>Tutto quello che fa l'iPad, <strong>più</strong> il doppio bus audio <strong>PROGRAM + CUE</strong>: preascolto in cuffia (PFL) su un'uscita separata mentre il programma resta in onda su un'altra. Selezione indipendente dei device di output, preascolto del trim nell'editor e scorciatoie da tastiera pro (Spazio, shuttle J/K/L, nudge a fotogrammi). La postazione da studio completa.</p>
+      </div>
+      <div class="feat">
+        <span class="num">Windows 10/11</span>
+        <h3>Windows</h3>
+        <p>Port nativo con motore audio <strong>multi-driver</strong>: WASAPI condiviso (plug &amp; play), WASAPI esclusivo (bassa latenza) e <strong>ASIO</strong> per la latenza minima da regia (standard broadcast). Stesso flusso di lavoro, su PC desktop e portatili.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -72,7 +110,7 @@
       <div class="eyebrow">Funzioni principali</div>
       <h2>Cosa fa l'app.</h2>
       <p>
-        Le otto funzioni principali di JingleCue Pro, in ordine.
+        Le otto funzioni principali di JingleCue Pro, comuni a tutte le piattaforme.
       </p>
     </div>
 
@@ -80,12 +118,12 @@
       <div class="feat">
         <span class="num">01 · Audio engine</span>
         <h3>Multi-playback simultaneo</h3>
-        <p>AVAudioEngine nativo iOS. Più pad attivi contemporaneamente, ognuno con volume, fade in/out, IN/OUT point e loop indipendenti.</p>
+        <p>Motore audio nativo su ogni piattaforma (AVAudioEngine su iPad/Mac, WASAPI/ASIO su Windows). Più pad attivi contemporaneamente, ognuno con volume, fade in/out, IN/OUT point e loop indipendenti.</p>
       </div>
       <div class="feat">
         <span class="num">02 · Crossfade</span>
         <h3>Automix · Fade e Take</h3>
-        <p>Tre modalità nell'header. <strong>FADE</strong>: il nuovo pad va in coda, crossfade negli ultimi secondi del brano in onda (DJ-style). <strong>TAKE</strong>: il nuovo pad subentra subito in crossfade rapido al tap (broadcast one-touch, per passare da tappetino a walk-in). Durate indipendenti regolabili (FADE 0,5–10 s, TAKE 0,1–2 s).</p>
+        <p>Tre modalità nell'header. <strong>FADE</strong>: il nuovo pad va in coda, crossfade negli ultimi secondi del brano in onda (DJ-style). <strong>TAKE</strong>: tap su un altro pad = subentro immediato; se non tocchi nulla, a fine brano il playback si ferma. Durate indipendenti regolabili (FADE 0,5–10 s, TAKE 0,1–2 s).</p>
       </div>
       <div class="feat">
         <span class="num">03 · Waveform live</span>
@@ -115,7 +153,7 @@
       <div class="feat">
         <span class="num">08 · Offline</span>
         <h3>Funzionamento locale al dispositivo</h3>
-        <p>L'app non raccoglie dati personali, non integra SDK di analytics, tracker o pubblicità. Background audio mode nativo iOS per la riproduzione a schermo bloccato.</p>
+        <p>L'app non raccoglie dati personali, non integra SDK di analytics, tracker o pubblicità. Su iPad, background audio nativo per la riproduzione a schermo bloccato.</p>
       </div>
     </div>
   </div>
@@ -187,7 +225,7 @@
     </div>
     <div class="legal">
       JingleCue Pro © 2026 <strong style="color: var(--text-2)">Daniele Cappello</strong>. Tutti i diritti riservati.<br>
-      Apple, iPad, iPadOS, App Store sono marchi registrati di Apple Inc. JingleCue Pro non è affiliato, autorizzato, sponsorizzato o approvato da Apple Inc. SIAE è marchio registrato della Società Italiana degli Autori ed Editori: JingleCue Pro non è affiliato, autorizzato, sponsorizzato o approvato da SIAE. Avid iNews, Mosart ed ENPS sono marchi dei rispettivi titolari, citati esclusivamente per indicare lo standard MOS Protocol supportato dagli export dell'app.
+      Apple, iPad, iPadOS, macOS, Mac, App Store sono marchi registrati di Apple Inc. Microsoft, Windows e Windows 10/11 sono marchi registrati di Microsoft Corporation. ASIO è marchio registrato di Steinberg Media Technologies GmbH. JingleCue Pro non è affiliato, autorizzato, sponsorizzato o approvato da Apple Inc., Microsoft Corporation o Steinberg. SIAE è marchio registrato della Società Italiana degli Autori ed Editori: JingleCue Pro non è affiliato, autorizzato, sponsorizzato o approvato da SIAE. Avid iNews, Mosart ed ENPS sono marchi dei rispettivi titolari, citati esclusivamente per indicare lo standard MOS Protocol supportato dagli export dell'app.
     </div>
   </div>
 </footer>

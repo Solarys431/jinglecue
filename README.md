@@ -22,7 +22,7 @@ L'app **non è ancora distribuita su App Store** e non è disponibile per il dow
 
 **Audio engine nativo.** Basato su AVAudioEngine di iOS. Supporta multi-playback simultaneo, fade in/out per pad, IN/OUT point al centesimo di secondo, loop seamless.
 
-**Modalità Automix.** Toggle nell'header dell'app: quando attivo, premere un pad fermo mentre un altro suona avvia un crossfade automatico tra i due. Durata configurabile da 0,5 a 10 secondi.
+**Modalità Automix.** Toggle nell'header dell'app con OFF, FADE e TAKE. In FADE il pad successivo entra in coda e il crossfade parte negli ultimi secondi del brano corrente. In TAKE, premere un altro pad mentre uno è in onda fa il subentro immediato; se non si interviene, a fine brano il playback si ferma.
 
 **Forma d'onda live con seek.** Durante la riproduzione la forma d'onda viene disegnata nel pad in tempo reale. Trascinando con un dito si salta a qualsiasi punto del brano.
 
